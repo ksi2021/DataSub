@@ -53,7 +53,7 @@ class Class1 extends Aclass
                 }
             }
         }
-        // console.log(this.Numbers)
+        console.log(this.Numbers)
         return this.factorial();
     }
 }
@@ -73,15 +73,7 @@ class Class2 extends Aclass
             }
             this.Numbers[j] = temp;
         }
-        // console.log(this.Numbers)
+        console.log(this.Numbers)
         return this.factorial();
     }
 }
-
-let e = new Class2(5)
-
-console.log(e.Numbers)
-console.log(e.sort())
-
-
-Aclass
