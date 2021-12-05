@@ -3,15 +3,14 @@ class Aclass {
     Numbers = [];
     constructor(_n) 
     {
-        this.n = _n;
         if (this.constructor == Aclass) throw new Error("Abstract classes can't be instantiated.")
-        this.fill(this.n)
+        this.fill(_n)
         this.#_isUsed = true
     }
 
     sort() { throw new Error("Abstract Method has no implementation"); }
 
-    factorial() 
+    factorial()     
     {
         let temp = []
         for(let i = 0; i < this.Numbers.length; i++){
@@ -77,3 +76,7 @@ class Class2 extends Aclass
         return this.factorial();
     }
 }
+
+let e = new Class1(15)
+console.log(e.Numbers)
+console.log(e.sort())
